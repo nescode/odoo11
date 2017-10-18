@@ -7,21 +7,6 @@
     </template>
 
     <template id="payment_tokens_list" name="Payment Tokens list">
-        <!--
-        Variables description:
-            - 'submit_txt' the text displayed inside the submit button
-            - 'submit_class' the css classes to style the submit button
-            - 'icon_class' font awesome class (e.g. 'fa-trash', 'fa-lock')
-            - 'form_action' the URI to the page that will handle the form values given for server2server
-            - 'pms' the tokens
-            - 'checked_pm_id' the payment token that should be checked (for radio buttons)
-            - 'mode' can take two values, either 'payment' or 'manage'. 'manage' displays the add a new card and delete buttons. 'payment'
-                display a form that is used to pay and send the information to the form action url.
-            - 's2s_acquirers' the list of the server2server acquirers
-            - 'form_acquirers' the list of the payment acquirers to pay with forms
-            - 'verify_validity' if we need to verify if the payment method is valid when adding a new one
-            - 'prepare_tx_url' the url of the route which will handle the creation of a transaction for a form base payment (handles if the transaction is form or form_save)
-        -->
         <form t-if="s2s_acquirers or pms or form_acquirers" method="post" class="o_payment_form"
                 t-att-action="form_action if form_action else '#'"
                 t-att-data-success-url="success_url or ''"
