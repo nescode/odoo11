@@ -55,7 +55,7 @@
                     <p t-field="doc.date_order"/>
                 </div>
                 <div t-if="doc.user_id.name" class="col-xs-3">
-                    <strong>Salesperson:</strong>
+                    <strong>Representative:</strong>
                     <p t-field="doc.user_id"/>
                 </div>
                 <div name="payment_term" t-if="doc.payment_term_id" class="col-xs-3">
