@@ -47,6 +47,10 @@ Be sure to follow the steps in this section as your limited, non-root user (not 
 sudo pip3 install -r /opt/odoo/doc/requirements.txt
 sudo pip3 install -r /opt/odoo/requirements.txt
 ```
+Note: VM/VPS with ram lesser than 1GB or without swap file will generate below error.
+```
+error: command 'x86_64-linux-gnu-gcc' failed with exit status 4
+```
 ### Step 7: Install Less CSS via nodejs and npm
 ```
 sudo curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
