@@ -11,6 +11,13 @@ sudo apt update && sudo apt upgrade
 
 sudo apt install git python-pip python3-pip postgresql postgresql-server-dev-9.5 python-all-dev python-dev python-setuptools libxml2-dev libxslt1-dev libevent-dev libsasl2-dev libldap2-dev pkg-config libtiff5-dev libjpeg8-dev libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev liblcms2-utils libwebp-dev tcl8.6-dev tk8.6-dev python-tk libyaml-dev fontconfig
 ```
+
+In case of "Unable to locate package language-pack-UTF-8" or "unsupported locale setting"
+error:
+
+```
+export LC_ALL=C
+```
 ### Step 2: Create a PostgreSQL User
 ```
 sudo su - postgres
